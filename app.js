@@ -4,19 +4,19 @@ document.addEventListener("DOMContentLoaded", () => {
   if (!window.matchMedia("(hover: hover)").matches) {
   }
 
-  lenis = new Lenis({
-    smoothWheel: true,
-  });
+  //   lenis = new Lenis({
+  //     smoothWheel: true,
+  //   });
 
-  lenis.on("scroll", ScrollTrigger.update);
+  //   lenis.on("scroll", ScrollTrigger.update);
 
-  gsap.ticker.add((time) => {
-    if (lenis) {
-      lenis.raf(time * 1000);
-    }
-  });
+  //   gsap.ticker.add((time) => {
+  //     if (lenis) {
+  //       lenis.raf(time * 1000);
+  //     }
+  //   });
 
-  gsap.ticker.lagSmoothing(0);
+  //   gsap.ticker.lagSmoothing(0);
 
   const sections = Array.from(document.querySelectorAll("section"));
 
