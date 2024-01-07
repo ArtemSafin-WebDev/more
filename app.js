@@ -1,45 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
-  //   let lenis = null;
+  const images = Array.from(document.querySelectorAll("img[loading='lazy']"));
 
-  //   if (!window.matchMedia("(hover: hover)").matches) {
-  //   }
-
-  //   lenis = new Lenis({
-  //     smoothWheel: true,
-  //     smoothTouch: true,
-  //   });
-
-  //   lenis.on("scroll", ScrollTrigger.update);
-
-  //   gsap.ticker.add((time) => {
-  //     if (lenis) {
-  //       lenis.raf(time * 1000);
-  //     }
-  //   });
-
-  //   gsap.ticker.lagSmoothing(0);
-
-  const sections = Array.from(document.querySelectorAll("section"));
-
-  sections.forEach((section, index) => {
-    if (index > sections.length - 2) return;
-
-    // const inner = section.querySelector(".section-inner");
-
-    // const tl = gsap.timeline({
-    //   scrollTrigger: {
-    //     start: "top top",
-    //     end: () => 999999999,
-    //     trigger: section,
-    //     pin: true,
-    //     pinSpacing: false,
-    //   },
-    // });
-
-    // tl.to(inner, {
-    //   y: () => window.innerHeight,
-    //   duration: 1,
-    //   ease: "none",
-    // });
+  images.forEach((image) => {
+    image.classList.add("lazyload");
+    function loaded() {
+      image.classList.add("loaded");
+    }
+    if (image.complete) {
+      loaded();
+    } else {
+      image.addEventListener("load", loaded);
+    }
   });
 });

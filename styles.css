@@ -11,7 +11,7 @@ html {
   -webkit-tap-highlight-color: transparent;
   overscroll-behavior: none;
   font-size: clamp(2px, 0.925vw, 125px);
-  font-size: clamp(2px, 0.9vw, 125px);
+  font-size: clamp(2px, 0.88vw, 125px);
 }
 
 body {
@@ -38,7 +38,7 @@ section {
 .first-section::before {
   content: "";
   display: block;
-  padding-bottom: 177.777%;
+  height: 192rem;
 }
 
 .first-section__bg {
@@ -117,7 +117,7 @@ section {
 .second-section::before {
   content: "";
   display: block;
-  padding-bottom: 177.777%;
+  height: 192rem;
 }
 
 .second-section__bg {
@@ -204,7 +204,7 @@ section {
 .third-section::before {
   content: "";
   display: block;
-  padding-bottom: 177.777%;
+  height: 192rem;
 }
 
 .third-section__bg {
@@ -289,7 +289,7 @@ section {
 .fourth-section::before {
   content: "";
   display: block;
-  padding-bottom: 177.777%;
+  height: 192rem;
 }
 
 .fourth-section__bg {
@@ -364,7 +364,7 @@ section {
 .fifth-section::before {
   content: "";
   display: block;
-  padding-bottom: 177.777%;
+  height: 192rem;
 }
 
 .fifth-section__bg {
@@ -450,7 +450,7 @@ section {
 .sixth-section::before {
   content: "";
   display: block;
-  padding-bottom: 177.777%;
+  height: 192rem;
 }
 
 .sixth-section__bg {
@@ -528,7 +528,7 @@ section {
 .seventh-section::before {
   content: "";
   display: block;
-  padding-bottom: 177.777%;
+  height: 192rem;
 }
 
 .seventh-section__bg {
@@ -606,7 +606,7 @@ section {
 .eights-section::before {
   content: "";
   display: block;
-  padding-bottom: 177.777%;
+  height: 192rem;
 }
 
 .eights-section__bg {
@@ -684,7 +684,7 @@ section {
 .ninth-section::before {
   content: "";
   display: block;
-  padding-bottom: 177.777%;
+  height: 192rem;
 }
 
 .ninth-section__bg {
@@ -762,7 +762,7 @@ section {
 .tenth-section::before {
   content: "";
   display: block;
-  padding-bottom: 177.777%;
+  height: 192rem;
 }
 
 .tenth-section__bg {
@@ -938,4 +938,14 @@ section {
   left: 0;
   top: 0;
   overflow: visible !important;
+}
+
+img[loading=lazy] {
+  opacity: 0;
+  visibility: hidden;
+}
+img[loading=lazy].loaded {
+  opacity: 1;
+  visibility: inherit;
+  transition: opacity 0.4s, visibility 0.4s;
 }/*# sourceMappingURL=styles.css.map */

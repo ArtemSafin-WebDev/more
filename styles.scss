@@ -11,7 +11,7 @@ html {
   -webkit-tap-highlight-color: transparent;
   overscroll-behavior: none;
   font-size: clamp(2px, 0.925vw, 125px);
-  font-size: clamp(2px, 0.9vw, 125px);
+  font-size: clamp(2px, 0.88vw, 125px);
 }
 
 body {
@@ -41,7 +41,7 @@ section {
   &::before {
     content: "";
     display: block;
-    padding-bottom: 177.777%;
+    height: 192rem;
   }
 }
 
@@ -118,7 +118,7 @@ section {
   &::before {
     content: "";
     display: block;
-    padding-bottom: 177.777%;
+    height: 192rem;
   }
 }
 
@@ -203,7 +203,7 @@ section {
   &::before {
     content: "";
     display: block;
-    padding-bottom: 177.777%;
+    height: 192rem;
   }
 }
 
@@ -285,7 +285,7 @@ section {
   &::before {
     content: "";
     display: block;
-    padding-bottom: 177.777%;
+    height: 192rem;
   }
 }
 
@@ -359,7 +359,7 @@ section {
   &::before {
     content: "";
     display: block;
-    padding-bottom: 177.777%;
+    height: 192rem;
   }
 }
 
@@ -442,7 +442,7 @@ section {
   &::before {
     content: "";
     display: block;
-    padding-bottom: 177.777%;
+    height: 192rem;
   }
 }
 
@@ -518,7 +518,7 @@ section {
   &::before {
     content: "";
     display: block;
-    padding-bottom: 177.777%;
+    height: 192rem;
   }
 }
 
@@ -594,7 +594,7 @@ section {
   &::before {
     content: "";
     display: block;
-    padding-bottom: 177.777%;
+    height: 192rem;
   }
 }
 
@@ -670,7 +670,7 @@ section {
   &::before {
     content: "";
     display: block;
-    padding-bottom: 177.777%;
+    height: 192rem;
   }
 }
 
@@ -746,7 +746,7 @@ section {
   &::before {
     content: "";
     display: block;
-    padding-bottom: 177.777%;
+    height: 192rem;
   }
 }
 
@@ -921,4 +921,14 @@ section {
   left: 0;
   top: 0;
   overflow: visible !important;
+}
+
+img[loading="lazy"] {
+  opacity: 0;
+  visibility: hidden;
+  &.loaded {
+    opacity: 1;
+    visibility: inherit;
+    transition: opacity 0.4s, visibility 0.4s;
+  }
 }
