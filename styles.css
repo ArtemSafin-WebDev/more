@@ -947,5 +947,5 @@ img[loading=lazy] {
 img[loading=lazy].loaded {
   opacity: 1;
   visibility: inherit;
-  transition: opacity 0.4s, visibility 0.4s;
+  transition: opacity 0.6s, visibility 0.6s;
 }/*# sourceMappingURL=styles.css.map */

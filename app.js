@@ -9,7 +9,11 @@ document.addEventListener("DOMContentLoaded", () => {
     if (image.complete) {
       loaded();
     } else {
-      image.addEventListener("load", loaded);
+      image.addEventListener("load", () => {
+        setTimeout(() => {
+          loaded();
+        }, 200);
+      });
     }
   });
 });
