@@ -29,18 +29,17 @@ document.addEventListener("DOMContentLoaded", () => {
     const tl = gsap.timeline({
       scrollTrigger: {
         start: "top top",
-        end: () => `top+=${window.innerHeight} top`,
+        end: () => 999999999,
         trigger: section,
-        scrub: true,
-        // pin: true,
-        // pinSpacing: false,
+        pin: true,
+        pinSpacing: false,
       },
     });
 
-    tl.to(inner, {
-      y: () => window.innerHeight,
-      duration: 1,
-      ease: "none",
-    });
+    // tl.to(inner, {
+    //   y: () => window.innerHeight,
+    //   duration: 1,
+    //   ease: "none",
+    // });
   });
 });
