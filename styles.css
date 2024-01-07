@@ -955,7 +955,7 @@ section {
     scroll-snap-stop: always;
   }
   section:last-child {
-    scroll-snap-align: end;
+    scroll-snap-align: start;
   }
 }
 
