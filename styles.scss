@@ -9,7 +9,7 @@ html {
   font-size: 10px;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
-
+  overscroll-behavior: none;
   font-size: clamp(2px, 0.925vw, 125px);
 }
 
@@ -21,15 +21,12 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   padding: 0;
   margin: 0;
+
+  overflow-y: scroll;
 }
 
 section {
   background-color: #fff;
-}
-
-.page-wrapper {
-  //   overflow: hidden;
-  //   overflow: clip;
 }
 
 .first-section {
@@ -918,4 +915,18 @@ section {
   left: 0;
   top: 0;
   overflow: visible !important;
+  margin-top: 400px;
+  &:first-child {
+    margin-top: 0;
+  }
+
+  //   margin-bottom: 400rem;
+
+  //   &:nth-last-child(2) {
+  //     margin-bottom: 0;
+  //   }
+
+  //   &:last-child {
+  //     margin-bottom: 0;
+  //   }
 }
