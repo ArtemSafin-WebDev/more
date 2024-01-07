@@ -839,7 +839,7 @@ section {
 .eleventh-section::before {
   content: "";
   display: block;
-  padding-bottom: 214.81%;
+  height: 232rem;
 }
 
 .eleventh-section__bg {
