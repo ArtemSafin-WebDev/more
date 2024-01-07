@@ -28,16 +28,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const tl = gsap.timeline({
       scrollTrigger: {
         start: "top top",
-        end: () => `top+=${window.innerHeight} top`,
+        end: () => 999999999999,
         trigger: section,
-        markers: false,
-        scrub: true,
+        pin: true,
+        pinSpacing: false,
       },
-    });
-    tl.to(inner, {
-      yPercent: 100,
-      ease: "none",
-      duration: 1,
     });
   });
 });
