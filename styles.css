@@ -907,4 +907,9 @@ section {
 .section-inner {
   position: absolute;
   inset: 0;
+  overflow: hidden;
+}
+
+section {
+  overflow: visible !important;
 }/*# sourceMappingURL=styles.css.map */
