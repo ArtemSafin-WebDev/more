@@ -24,17 +24,17 @@ document.addEventListener("DOMContentLoaded", () => {
   sections.forEach((section, index) => {
     if (index > sections.length - 2) return;
 
-    const inner = section.querySelector(".section-inner");
+    // const inner = section.querySelector(".section-inner");
 
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        start: "top top",
-        end: () => 999999999,
-        trigger: section,
-        pin: true,
-        pinSpacing: false,
-      },
-    });
+    // const tl = gsap.timeline({
+    //   scrollTrigger: {
+    //     start: "top top",
+    //     end: () => 999999999,
+    //     trigger: section,
+    //     pin: true,
+    //     pinSpacing: false,
+    //   },
+    // });
 
     // tl.to(inner, {
     //   y: () => window.innerHeight,
