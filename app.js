@@ -22,13 +22,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
   sections.forEach((section, index) => {
     if (index > sections.length - 2) return;
-    ScrollTrigger.create({
-      start: "top top",
-      end: 999999999999,
-      trigger: section,
-      pin: true,
-      pinSpacing: false,
-      markers: false,
+
+    const inner = section.querySelector(".section-inner");
+
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        start: "top top",
+        end: () => `top+=${window.innerHeight} top`,
+        trigger: section,
+        markers: false,
+        scrub: true,
+      },
+    });
+    tl.to(inner, {
+      yPercent: 100,
+      ease: "none",
+      duration: 1,
     });
   });
 });
