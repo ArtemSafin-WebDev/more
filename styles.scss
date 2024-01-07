@@ -1,0 +1,884 @@
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+
+  font-size: clamp(2px, 0.925vw, 125px);
+}
+
+body {
+  background-color: #fff;
+
+  color: black;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  background-color: #fff;
+}
+
+.page-wrapper {
+  overflow: hidden;
+  overflow: clip;
+}
+
+.first-section {
+  position: relative;
+  overflow: hidden;
+  &::before {
+    content: "";
+    display: block;
+    padding-bottom: 177.777%;
+  }
+}
+
+.first-section__bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.first-section__splashes {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.first-section__fish {
+  width: 89.6rem;
+  height: auto;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+}
+
+.first-section__heading {
+  width: 63.5rem;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 9.7rem;
+}
+
+.first-section__heading-text {
+  position: absolute;
+  top: 35.8rem;
+  left: 10rem;
+  width: 43rem;
+  height: auto;
+}
+
+.first-section__stats {
+  width: 26.7rem;
+  height: auto;
+  position: absolute;
+  right: 9.9rem;
+  bottom: 14.4rem;
+}
+
+.first-section__total-price {
+  position: absolute;
+  right: 17.3rem;
+  bottom: 5.6rem;
+  width: 11.8rem;
+  height: auto;
+}
+
+.first-section__flowers {
+  width: 64.3rem;
+  height: auto;
+  position: absolute;
+  left: 1.9rem;
+  bottom: 3.8rem;
+}
+
+.second-section {
+  position: relative;
+  overflow: hidden;
+  &::before {
+    content: "";
+    display: block;
+    padding-bottom: 177.777%;
+  }
+}
+
+.second-section__bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.second-section__splashes {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.second-section__heading {
+  position: absolute;
+  width: 68.7rem;
+  height: auto;
+  left: 9.7rem;
+  top: 0;
+}
+
+.second-section__heading-text {
+  position: absolute;
+  top: 35.8rem;
+  left: 10rem;
+  width: 31.8rem;
+  height: auto;
+}
+
+.second-section__flower {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 76.5rem;
+  height: auto;
+}
+
+.second-section__sea {
+  position: absolute;
+  bottom: 17.9rem;
+  left: 0;
+  width: 64.6rem;
+  height: auto;
+}
+
+.second-section__lichi {
+  position: absolute;
+  right: 0;
+  top: 8.4rem;
+  width: 67rem;
+  height: auto;
+}
+
+.second-section__stats {
+  position: absolute;
+  right: 10.4rem;
+  bottom: 14.5rem;
+  width: 26.7rem;
+  height: auto;
+}
+
+.second-section__total {
+  position: absolute;
+  bottom: 5.6rem;
+  right: 17.3rem;
+  width: 11.8rem;
+  height: auto;
+}
+
+.third-section {
+  position: relative;
+  overflow: hidden;
+  &::before {
+    content: "";
+    display: block;
+    padding-bottom: 177.777%;
+  }
+}
+
+.third-section__bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.third-section__splashes {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.third-section__tropic {
+  position: absolute;
+  width: 72rem;
+  right: 0;
+  top: 0;
+  height: auto;
+}
+
+.third-section__banana {
+  position: absolute;
+  left: 0;
+  top: 49.5rem;
+  width: 72.8rem;
+  height: auto;
+}
+
+.third-section__chocolate {
+  position: absolute;
+  bottom: 20rem;
+  width: 64.8rem;
+  left: 3rem;
+}
+
+.third-section__heading {
+  position: absolute;
+  top: 0;
+  width: 66rem;
+  height: auto;
+  left: 9.7rem;
+}
+.third-section__heading-text {
+  width: 45.8rem;
+  height: auto;
+  position: absolute;
+  left: 10rem;
+  top: 27.3rem;
+}
+
+.third-section__stats {
+  position: absolute;
+  right: 10.2rem;
+  bottom: 14.4rem;
+  width: 26.7rem;
+  height: auto;
+}
+
+.third-section__total {
+  position: absolute;
+  right: 18.2rem;
+  bottom: 5.6rem;
+  width: 11.8rem;
+  height: auto;
+}
+
+.fourth-section {
+  position: relative;
+  overflow: hidden;
+  &::before {
+    content: "";
+    display: block;
+    padding-bottom: 177.777%;
+  }
+}
+
+.fourth-section__bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fourth-section__hand {
+  position: absolute;
+  top: 20.6rem;
+  right: 1.3rem;
+  width: 53.6rem;
+}
+
+.fourth-section__ahegao {
+  position: absolute;
+  top: 85.4rem;
+  height: auto;
+  left: 14.8rem;
+  width: 63rem;
+}
+
+.fourth-section__butt {
+  width: 50rem;
+  height: auto;
+  bottom: 3.9rem;
+  left: 7.1rem;
+  position: absolute;
+}
+
+.fourth-section__heading {
+  position: absolute;
+  top: 0;
+  height: auto;
+  width: 53.6rem;
+  left: 9.8rem;
+}
+
+.fourth-section__heading-text {
+  position: absolute;
+  width: 45rem;
+  height: auto;
+  left: 9.9rem;
+  top: 35.8rem;
+}
+
+.fourth-section__stats {
+  position: absolute;
+  width: 26.7rem;
+  height: auto;
+  right: 10.3rem;
+  bottom: 14.5rem;
+}
+
+.fourth-section__total {
+  position: absolute;
+  height: auto;
+  right: 17.7rem;
+  bottom: 5.6rem;
+  width: 11.8rem;
+}
+
+.fifth-section {
+  position: relative;
+  overflow: hidden;
+  &::before {
+    content: "";
+    display: block;
+    padding-bottom: 177.777%;
+  }
+}
+
+.fifth-section__bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fifth-section__splashes {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fifth-section__david {
+  position: absolute;
+  width: 103rem;
+  height: auto;
+  top: 24.2rem;
+  left: 3rem;
+}
+
+.fifth-section__side-text {
+  position: absolute;
+  top: 42rem;
+  height: auto;
+  right: 0;
+  width: 35.8rem;
+}
+
+.fifth-section__rules {
+  position: absolute;
+  width: 60.5rem;
+  height: auto;
+  bottom: 5.5rem;
+  left: 7rem;
+}
+.fifth-section__heading {
+  position: absolute;
+  left: 9.8rem;
+  height: auto;
+  width: 88rem;
+  top: 0;
+}
+
+.fifth-section__heading-text {
+  position: absolute;
+  top: 27.3rem;
+  left: 10.4rem;
+  height: auto;
+  width: 52.4rem;
+}
+
+.fifth-section__stats {
+  position: absolute;
+  right: 9.8rem;
+  bottom: 14.4rem;
+  width: 26.7rem;
+  height: auto;
+}
+
+.fifth-section__total {
+  position: absolute;
+  right: 17.8rem;
+  bottom: 5.6rem;
+  width: 11.8rem;
+  height: auto;
+}
+
+.sixth-section {
+  position: relative;
+  overflow: hidden;
+  &::before {
+    content: "";
+    display: block;
+    padding-bottom: 177.777%;
+  }
+}
+
+.sixth-section__bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sixth-section__splashes {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sixth-section__citrus {
+  top: 0;
+  right: 0;
+  width: 52.5rem;
+  height: auto;
+  position: absolute;
+}
+
+.sixth-section__plane {
+  position: absolute;
+  left: 7.3rem;
+  width: 88rem;
+  height: auto;
+  bottom: 16rem;
+}
+
+.sixth-section__stats {
+  position: absolute;
+  height: auto;
+  right: 10.5rem;
+  bottom: 14.5rem;
+  width: 26.7rem;
+}
+
+.sixth-section__heading {
+  position: absolute;
+  width: 65rem;
+  height: auto;
+  top: 0;
+  left: 10rem;
+}
+
+.sixth-section__heading-text {
+  position: absolute;
+  top: 27rem;
+  height: auto;
+  left: 10rem;
+  width: 27rem;
+}
+
+.sixth-section__total {
+  width: 11.8rem;
+  height: auto;
+  position: absolute;
+  right: 18rem;
+  bottom: 5.6rem;
+}
+
+.seventh-section {
+  position: relative;
+  overflow: hidden;
+  &::before {
+    content: "";
+    display: block;
+    padding-bottom: 177.777%;
+  }
+}
+
+.seventh-section__bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.seventh-section__splashes {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.seventh-section__grass {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 89.3rem;
+  height: auto;
+}
+
+.seventh-section__tea {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 69.5rem;
+  height: auto;
+}
+
+.seventh-section__heading {
+  position: absolute;
+  top: 0;
+  left: 10.5rem;
+  width: 54.4rem;
+  height: auto;
+}
+
+.seventh-section__heading-text {
+  position: absolute;
+  left: 10.7rem;
+  top: 35.9rem;
+  height: auto;
+  width: 32rem;
+}
+
+.seventh-section__stats {
+  position: absolute;
+  width: 26.7rem;
+  right: 10.3rem;
+  bottom: 14.4rem;
+  height: auto;
+}
+
+.seventh-section__total {
+  position: absolute;
+  right: 18.3rem;
+  bottom: 5.6rem;
+  width: 11.8rem;
+  height: auto;
+}
+
+.eights-section {
+  position: relative;
+  overflow: hidden;
+  &::before {
+    content: "";
+    display: block;
+    padding-bottom: 177.777%;
+  }
+}
+
+.eights-section__bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.eights-section__splashes {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.eights-section__orange {
+  position: absolute;
+  height: auto;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.eights-section__pieces {
+  width: 80rem;
+  height: auto;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.eights-section__heading {
+  height: auto;
+  position: absolute;
+  width: 75rem;
+  top: 0;
+  left: 10rem;
+}
+
+.eights-section__heading-text {
+  position: absolute;
+  top: 27.3rem;
+  left: 10rem;
+  width: 43rem;
+  height: auto;
+}
+
+.eights-section__stats {
+  position: absolute;
+  right: 10rem;
+  bottom: 14.4rem;
+  width: 26.7rem;
+  height: auto;
+}
+
+.eights-section__total {
+  position: absolute;
+  height: auto;
+  width: 11.8rem;
+  right: 18.2rem;
+  bottom: 5.6rem;
+}
+
+.ninth-section {
+  position: relative;
+  overflow: hidden;
+  &::before {
+    content: "";
+    display: block;
+    padding-bottom: 177.777%;
+  }
+}
+
+.ninth-section__bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ninth-section__splashes {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ninth-section__sacura {
+  position: absolute;
+  height: auto;
+  right: 0;
+  top: 0;
+  width: 80.6rem;
+}
+
+.ninth-section__landscape {
+  position: absolute;
+  bottom: 6.1rem;
+  left: 0;
+  height: auto;
+  width: 78rem;
+}
+
+.ninth-section__heading {
+  position: absolute;
+  width: 66.7rem;
+  height: auto;
+  top: 0;
+  left: 9.3rem;
+}
+
+.ninth-section__heading-text {
+  position: absolute;
+  width: 40rem;
+  height: auto;
+  left: 10rem;
+  top: 27rem;
+}
+
+.ninth-section__stats {
+  position: absolute;
+  right: 10rem;
+  bottom: 14.4rem;
+  width: 26.7rem;
+  height: auto;
+}
+
+.ninth-section__total {
+  width: 11.8rem;
+  height: auto;
+  position: absolute;
+  right: 17.6rem;
+  bottom: 5.6rem;
+}
+
+.tenth-section {
+  position: relative;
+  overflow: hidden;
+  &::before {
+    content: "";
+    display: block;
+    padding-bottom: 177.777%;
+  }
+}
+
+.tenth-section__bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tenth-section__splashes {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tenth-section__lamps {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 73.3rem;
+  height: auto;
+}
+
+.tenth-section__hands {
+  position: absolute;
+  height: auto;
+  bottom: 5.6rem;
+  width: 68rem;
+  left: 0;
+}
+
+.tenth-section__heading {
+  position: absolute;
+  width: 52.7rem;
+  height: auto;
+  top: 0;
+  left: 10rem;
+}
+
+.tenth-section__heading-text {
+  position: absolute;
+  width: 44rem;
+  height: auto;
+  left: 10rem;
+  top: 26.7rem;
+}
+
+.tenth-section__stats {
+  position: absolute;
+  right: 10.2rem;
+  bottom: 14.4rem;
+  width: 26.7rem;
+  height: auto;
+}
+
+.tenth-section__total {
+  position: absolute;
+  right: 17.9rem;
+  height: auto;
+  bottom: 5.6rem;
+  width: 11.8rem;
+}
+
+.eleventh-section {
+  position: relative;
+  overflow: hidden;
+  &::before {
+    content: "";
+    display: block;
+    padding-bottom: 214.81%;
+  }
+}
+
+.eleventh-section__bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.eleventh-section__splashes {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.eleventh-section__salmon {
+  position: absolute;
+  height: auto;
+  width: 57.7rem;
+  left: 0;
+  top: 0;
+}
+
+.eleventh-section__ramen {
+  position: absolute;
+  top: 17.3rem;
+  height: auto;
+  right: 0;
+  width: 48.9rem;
+}
+
+.eleventh-section__cat {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: auto;
+  width: 44.6rem;
+}
+
+.eleventh-section__heading {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  width: 39.7rem;
+  height: auto;
+}
+
+.eleventh-section__menu {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 77.6rem;
+  height: auto;
+  top: 27rem;
+}
