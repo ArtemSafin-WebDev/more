@@ -915,7 +915,9 @@ section {
   left: 0;
   top: 0;
   overflow: visible !important;
-  margin-top: 400px;
+  margin-top: 800px;
+  min-height: 100vh;
+  min-height: 100svh;
   &:first-child {
     margin-top: 0;
   }
