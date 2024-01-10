@@ -11,7 +11,7 @@ html {
   -webkit-tap-highlight-color: transparent;
   overscroll-behavior: none;
   font-size: clamp(2px, 0.925vw, 125px);
-  font-size: clamp(2px, 0.88vw, 125px);
+  font-size: clamp(2px, 0.86vw, 125px);
   height: 100%;
 }
 
@@ -643,8 +643,8 @@ section {
   position: absolute;
   height: auto;
   top: 0;
-  left: 0;
-  width: 100%;
+  right: 0;
+  width: 108rem;
 }
 
 .eights-section__pieces {
