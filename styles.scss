@@ -924,21 +924,21 @@ html.lenis {
 }
 
 section {
-  position: sticky !important;
-  left: 0;
-  top: 0;
-  overflow: visible !important;
+  // position: sticky !important;
+  // left: 0;
+  // top: 0;
+  // overflow: visible !important;
 
-  @media (max-width: 640px) {
-    &:not(:last-child) {
-      scroll-snap-align: start;
-      scroll-snap-stop: always;
-    }
+  // @media (max-width: 640px) {
+  //   &:not(:last-child) {
+  //     scroll-snap-align: start;
+  //     scroll-snap-stop: always;
+  //   }
 
-    &:last-child {
-      scroll-snap-align: start;
-    }
-  }
+  //   &:last-child {
+  //     scroll-snap-align: end;
+  //   }
+  // }
 }
 
 img[loading="lazy"] {

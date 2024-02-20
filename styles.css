@@ -943,22 +943,6 @@ html.lenis {
   pointer-events: none;
 }
 
-section {
-  position: sticky !important;
-  left: 0;
-  top: 0;
-  overflow: visible !important;
-}
-@media (max-width: 640px) {
-  section:not(:last-child) {
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
-  }
-  section:last-child {
-    scroll-snap-align: start;
-  }
-}
-
 img[loading=lazy] {
   opacity: 0;
   visibility: hidden;

@@ -16,4 +16,14 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
   });
+
+  const swiperElements = Array.from(document.querySelectorAll(".swiper"));
+
+  swiperElements.forEach((element) => {
+    new Swiper(element, {
+      slidesPerView: "auto",
+      speed: 600,
+      direction: "vertical",
+    });
+  });
 });
