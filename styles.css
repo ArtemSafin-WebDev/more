@@ -955,6 +955,7 @@ img[loading=lazy].loaded {
 
 .swiper {
   height: 100vh;
+  height: 100svh;
 }
 
 .swiper-slide {
